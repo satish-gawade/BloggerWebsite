@@ -116,7 +116,7 @@ nav .nav-menu{
 }
 /*Blog-carousel*/
 main.blog{
-  background: url(IMG-20220213-WA0050.jpg);
+  background: url(./img/IMG-20220213-WA0050.jpg);
   background-repeat: no-repeat;
   background-position: right;
   height: 100vh;
@@ -134,7 +134,7 @@ main .blog-post .blog-content{
 }
 /* Main Content*/
 main .site-title{
-  background: url(IMG-20220213-WA0053.jpg);
+  background: url(./img/IMG-20220213-WA0053.jpg);
   background-size: cover;
   height: 110vh;
   display: flex;
