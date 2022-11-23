@@ -1,0 +1,166 @@
+html, body{
+margin: 0%;
+box-sizing: border-box;
+overflow: hidden;
+text-emphasis-color: red;
+}
+:root{
+  
+  --text-gray:gray;
+}
+
+/* ---- Global Classes-----*/
+  a{
+    text-decoration: none;
+  }
+
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  ul{
+    list-style-type: none ;
+  }
+  h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+  }
+  h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+  }
+  h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+  }
+/* ---- Global Classes-----*/
+
+
+
+
+/*------navbar-----*/
+.nav{
+    background-color: blueviolet;
+    padding: 0.2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition : height 1s ease-in-out;
+}
+nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem ;
+    font-size: 1.1rem ;
+    position: relative;
+}
+.nav .social{
+    padding:1.4rem 0 ;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem;
+    display: block;
+   text-decoration: none;
+  
+
+}
+.nav .toggle-collapse{
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+  display: flex;
+  justify-content: flex-end ;
+  padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+  font-size: 1.4rem;
+  color: black;
+}
+.nav .nav-items .nav-link:hover{
+  background-color: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a{
+  color:black;
+}
+
+.nav .social a:hover{
+  color: black;
+}
+.nav .social a{
+  padding: 0.2rem;
+
+}
+.collapse{
+  height:30rem;
+}
+/*Blog-carousel*/
+main.blog{
+  background: url(IMG-20220213-WA0050.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}
+main .blog .blog-post{
+  padding-top: 6rem;
+
+}
+main .blog-post .blog-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+/* Main Content*/
+main .site-title{
+  background: url(IMG-20220213-WA0053.jpg);
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content:center;
+}
+.site-background{
+  
+    padding-top: 10srem;
+    text-align: center;
+    color: aliceblue;
+  
+}
+main .site-title .btn{
+  margin: 1.8rem;
+  background: skyblue;
+}
+
+
+
+/* Viewport less than or equal to 750px */
+@media only screen  and (max-width:750px){
+  .nav .nav-menu, .nav .nav-items{
+    flex-direction: column;
+  }
+}
+.nav .toggle-collapse{
+  display: initial;
+
+}
